@@ -85,6 +85,10 @@ public class FlavorsUnited
             event.accept(ModItems.COOKING_SALT);
             event.accept(ModItems.VINRGAR);
             event.accept(ModItems.SOY_SAUCE);
+            event.accept(ModItems.DUCK_EGG);
+            event.accept(ModItems.SALTED_DUCK_EGG);
+            event.accept(ModItems.RICEPORRIDGE);
+            event.accept(ModItems.OMELET);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){

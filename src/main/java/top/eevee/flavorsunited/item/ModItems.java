@@ -18,6 +18,14 @@ public class ModItems {
 
     public static final DeferredItem<Item> VINRGAR = ITEMS.registerItem("vinrgar",Item::new,new Item.Properties());
 
+    public static final DeferredItem<Item> DUCK_EGG = ITEMS.registerItem("duckegg",Item::new,new Item.Properties());
+
+    public static final DeferredItem<Item> SALTED_DUCK_EGG = ITEMS.registerItem("saltedduckegg",Item::new,new Item.Properties());
+
+    public static final DeferredItem<Item> OMELET = ITEMS.registerItem("omelet",Item::new,new Item.Properties());
+
+    public static final DeferredItem<Item> RICEPORRIDGE = ITEMS.registerItem("riceporridge",Item::new,new Item.Properties());
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
