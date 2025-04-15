@@ -14,6 +14,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import top.eevee.flavorsunited.FlavorsUnited;
+import top.eevee.flavorsunited.block.custom.IronPanBlock;
+import top.eevee.flavorsunited.block.custom.IronPotBlock;
 import top.eevee.flavorsunited.item.ModItems;
 
 import java.util.function.Supplier;
@@ -26,6 +28,17 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(0,1),BlockBehaviour.Properties.of()
                     .setId(ResourceKey.create(Registries.BLOCK,ResourceLocation.parse("flavorsunited:saltore")))
                     .strength(2F).requiresCorrectToolForDrops().sound(SoundType.STONE)),"flavorsunited:saltore");
+
+
+    public static final DeferredBlock<Block> IRON_PAN = registerBlock("ironpan",
+            () -> new IronPanBlock(BlockBehaviour.Properties.of()
+                    .setId(ResourceKey.create(Registries.BLOCK,ResourceLocation.parse("flavorsunited:ironpan")))
+                    .noOcclusion().strength(2F).sound(SoundType.IRON)),"flavorsunited:ironpan");
+
+    public static final DeferredBlock<Block> IRON_POT = registerBlock("ironpot",
+            () -> new IronPotBlock(BlockBehaviour.Properties.of()
+                    .setId(ResourceKey.create(Registries.BLOCK,ResourceLocation.parse("flavorsunited:ironpot")))
+                    .noOcclusion().strength(2F).sound(SoundType.IRON)),"flavorsunited:ironpot");
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block, String location) {

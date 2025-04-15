@@ -93,8 +93,11 @@ public class FlavorsUnited
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.SALT_ORE);
+            event.accept(ModBlocks.IRON_PAN);
+            event.accept(ModBlocks.IRON_POT);
         }
     }
+
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {

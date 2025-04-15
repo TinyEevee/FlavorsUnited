@@ -9,5 +9,9 @@
   "item.flavorsunited.duckegg": "鸭蛋",
   "item.flavorsunited.omelet": "鸡蛋饼",
   "item.flavorsunited.riceporridge": "白粥",
-  "item.flavorsunited.saltedduckegg": "咸鸭蛋"
+  "item.flavorsunited.saltedduckegg": "咸鸭蛋",
+  "item.flavorsunited.ironpan": "铁质平底锅",
+  "block.flavorsunited.ironpan": "铁质平底锅",
+  "item.flavorsunited.ironpot": "铁质煮锅",
+  "block.flavorsunited.ironpot": "铁质煮锅"
 }
