@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import top.eevee.flavorsunited.FlavorsUnited;
+import top.eevee.flavorsunited.item.custom.IronKitchenKnife;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS =
@@ -25,6 +26,8 @@ public class ModItems {
     public static final DeferredItem<Item> OMELET = ITEMS.registerItem("omelet",Item::new,new Item.Properties());
 
     public static final DeferredItem<Item> RICEPORRIDGE = ITEMS.registerItem("riceporridge",Item::new,new Item.Properties());
+
+    public static final DeferredItem<Item> IRONKITCHENKNIFE = ITEMS.registerItem("ironkitchenknife", IronKitchenKnife::new,new Item.Properties());
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
